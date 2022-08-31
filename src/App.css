@@ -1,0 +1,11 @@
+.App {
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App > div {
+  margin-right: 50px;
+}
+

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+main {
+  width: 800px;
+  /* border: 3px solid red; */
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+/* main:nth-of-type(odd){
+  margin-right: 50px
+} */
+
+.minvalue, .maxvalue{
+  font-size: initial;
+  text-align: center;
+}
+
+span{
+  font-size: 20px;
+  color: darkturquoise;
+  padding-right: 30px
+ 
+}
+
+
+.button-wrapper{
+  border: 3px solid darkturquoise;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0px;
+
+  
+}
+
+
+button{
+  /* margin: 15px 0px; */
+  font-family: Lobster, cursive;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 15px;
+  line-height: 2em;
+  border: 3px solid darkturquoise;
+  border-radius: 10px;
+  background-color: darkturquoise ;
+}
+
+button:active{
+  font-size: 27px;
+  background-color: orangered;
+}
+
+.error{
+  font-family: Lobster, cursive;
+  /* border: 3px solid darkturquoise; */
+  /* border-radius: 10px; */
+  /* background-color: darkturquoise ; */
+  color: red;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.container{
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid darkturquoise;
+  width: 250px;
+  
+  
+}
+
+
+.data{
+  font-family: Lobster, cursive;
+  border: 3px solid darkturquoise;
+  border-radius: 10px;
+  color: darkturquoise ;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+[type="number"]{
+  /* background:rgb(19, 15, 15); */
+  text-align: center;
+  color:#3ecf21;
+  font-size: 20px;
+  border: 1px solid darkturquoise;
+  margin: 5px;
+  border-radius: 5px;
+  width: 35%;
+  font-family: 'Press Start 2P', cursive;
+}
+[type="number"].error{
+  border: 3px solid red;
+  background:rgb(233, 163, 163);
+  color:red;
+  font-size: 25px;
+  font-weight: bold;
+  
+}
