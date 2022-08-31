@@ -53,7 +53,7 @@ return(
         min="0"
         // max="10"
         onChange={onChangeMaxInputHandler} 
-        /* value={props.MAXDATA} */
+        value={props.MAXDATA}
         />
   </div> 
   
@@ -69,7 +69,7 @@ return(
         min="0"
         // max="10"
         onChange={onChangeMinInputHandler} 
-        /* value={props.MINDATA} */
+        value={props.MINDATA}
         />
   </div> 
 

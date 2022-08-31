@@ -15,20 +15,30 @@ export const Counter = () => {
 
   const[error,SetError] = useState<string>("")
 
+ //   useEffect 
 
-  const getValuesFromLocalStorage = () => {
-    //достать значения min & max из LocalStorage и 'засетать' их
-    let MaxAsString = localStorage.getItem("maxvalueInLS");
-    let MaxValue = MaxAsString && JSON.parse(MaxAsString);
-    SetMaxvalue(MaxValue);
+  useEffect(()=>{let MaxAsString = localStorage.getItem("maxvalueInLS");
+  let MaxValue = MaxAsString && JSON.parse(MaxAsString);
+  SetMaxvalue(MaxValue);},[])
 
-    let MinAsString = localStorage.getItem("minvalueInLS");
-    let MinValue = MinAsString && JSON.parse(MinAsString);
-    SetMinvalue(MinValue);
-    setTabloData(MinValue)
-  }
+  useEffect(()=>{
+    localStorage.setItem("maxvalueInLS", JSON.stringify(maxvalue))
+  },[maxvalue]);
 
-  useEffect(()=>{getValuesFromLocalStorage()},[])
+
+  
+
+  useEffect(()=>{let MinAsString = localStorage.getItem("minvalueInLS");
+  let MinValue = MinAsString && JSON.parse(MinAsString);
+  SetMinvalue(MinValue);
+  setTabloData(MinValue)},[])
+
+  useEffect(()=>{
+    localStorage.setItem("minvalueInLS", JSON.stringify(minvalue))
+  },[minvalue]);
+
+// end
+
 
 
 // видимость окон
