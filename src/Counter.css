@@ -35,7 +35,7 @@ span{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px 0px;
+  padding: 15px 0;
 
   
 }
@@ -46,7 +46,6 @@ button{
   font-family: Lobster, cursive;
   font-weight: bold;
   font-size: 25px;
-  border-radius: 15px;
   line-height: 2em;
   border: 3px solid darkturquoise;
   border-radius: 10px;
